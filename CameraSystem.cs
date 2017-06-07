@@ -203,19 +203,6 @@ public class CameraSystemEditor : Editor
 
         EditorGUILayout.LabelField("カメラの移動速度");
         Edit.C_LerpSpeed = EditorGUILayout.IntSlider("0～10", Edit.C_LerpSpeed, 0, 10);
-
-        //EditorGUILayout.Space();
-
-        //EditorGUILayout.MinMaxSlider(new GUIContent("カメラのX角度を制限する"), ref Edit.XMinRadian, ref Edit.XMaxRadian, -60.0f, 90.0f);
-
-        //Edit.XMinRadian = Mathf.Clamp(Edit.XMinRadian, -60.0f, 0.0f);
-        //Edit.XMaxRadian = Mathf.Clamp(Edit.XMaxRadian, 0.0f, 90.0f);
-
-        //XMin = (int)Edit.XMinRadian;
-        //XMax = (int)Edit.XMaxRadian;
-
-        //EditorGUILayout.LabelField("-60～0", XMin.ToString());
-        //EditorGUILayout.LabelField("0～90", XMax.ToString());
     }
 }
 #endif
